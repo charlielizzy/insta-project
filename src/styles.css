@@ -1,2 +1,9 @@
 h1 {color: blue
 }
+
+.card {
+    max-width: 400px;
+    max-heighht: 600px;
+    border: black 2px solid;
+    box-shadow: 5px 10px
+}
