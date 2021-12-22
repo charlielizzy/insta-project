@@ -46,22 +46,24 @@ description.classList.add('description');
 description.innerText = post.description;
 content.appendChild(description);
 
+likeIcon.addEventListener('click', function () {toggleLikeIcon(likeIcon);
+});
 
+image.addEventListener('dblclick', function () {toggleLikeIcon(likeIcon);
+});
 })
 }
 
-likeIcon.addEventListener('click', function(){toggleLikeIcon(likeIcon)}
-)
+
 
 const toggleLikeIcon = (likeIcon) => {
-if (likeIcon.classList.contains("far")){
-likeIcon.classList.remove("far");
-likeIcon.classList.add("fas");
-likeIcon.style.color = "red";
-}
-else {
-    likeIcon.classList.remove("fas");
-    likeIcon.classList.add("far");
-    likeIcon.style.color = "black";
+if (likeIcon.classList.contains('far')) {
+    likeIcon.classList.add('fas');
+    likeIcon.classList.remove('far');
+    likeIcon.style.color = 'red';
+} else {
+    likeIcon.classList.add('far');
+    likeIcon.classList.remove('fas');
+    likeIcon.style.color = 'black';
 }
 }
