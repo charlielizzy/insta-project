@@ -9,7 +9,9 @@ h1 {color: darkgreen;
     max-width: 300px;
     box-shadow: 0px 0px 10px;
     padding: 5px;
-   
+    display: inline-block;
+    margin: 12px;
+    
 }
 
 .content {
